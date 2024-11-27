@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Grooming Dashboard</title>
+  <style type="text/css">
+    /* styles.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar .profile {
+  text-align: center;
+  margin-bottom: 30px;
+  border: solid red;
+  border-radius: 50%;
+}
+
+.sidebar .profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.sidebar .profile h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.sidebar .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.sidebar .menu li {
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  color: #80ff80;
+}
+
+.sidebar .menu li:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #009900;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.stat-item {
+  width: 20%;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  position: relative;
+}
+
+.stat-item h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.stat-item p {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.stat-item a {
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.stat-item.green {
+  background-color: #2ecc71;
+}
+
+.stat-item.red {
+  background-color: #e74c3c;
+}
+
+.stat-item.brown {
+  background-color: #a0522d;
+}
+
+.stat-item.orange {
+  background-color: #f39c12;
+}
+
+/* Bar Chart */
+.chart {
+  margin-top: 20px;
+}
+
+.chart h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.bargraph {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 200px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-top: 20px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.bar {
+  width: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  border-radius: 5px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.bar.green-bar {
+  background-color: #2ecc71;
+  height: 30px;
+}
+
+.bar.red-bar {
+  background-color: #e74c3c;
+  height: 100px;
+}
+
+.bar.brown-bar {
+  background-color: #a0522d;
+  height: 10px;
+}
+
+.bar.orange-bar {
+  background-color: #f39c12;
+  height: 200px;
+}
+
+.bar::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: calc(100% + 5px);
+  font-size: 12px;
+  color: black;
+}
+
+.bargraph-labels {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.bargraph-labels .label {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.bargraph-labels .label span {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.bargraph-labels .green {
+  background-color: #2ecc71;
+}
+
+.bargraph-labels .red {
+  background-color: #e74c3c;
+}
+
+.bargraph-labels .brown {
+  background-color: #a0522d;
+}
+
+.bargraph-labels .orange {
+  background-color: #f39c12;
+}
+
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="profile">
+        <a href="Index.html"><img src="Profile.png" alt="Profile" class="profile-image"></a>
+      </div>
+      <ul class="menu">
+        <li>Dashboard</li>
+        <li>Pet</li>
+        <li>Payment</li>
+        <li>Order Details</li>
+        <li>User Group</li>
+        <li>Logout</li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <header class="header">
+        <h1>Pet Grooming Management System Dashboard</h1>
+      </header>
+      <div class="stats">
+        <div class="stat-item green">
+          <h3>Total Pet</h3>
+          <p>150</p>
+          <a href="#">More Info →</a>
+        </div>
+        <div class="stat-item red">
+          <h3>Product</h3>
+          <p>500</p>
+          <a href="#">More Info →</a>
+        </div>
+        <div class="stat-item brown">
+          <h3>Groomers</h3>
+          <p>5</p>
+          <a href="#">More Info →</a>
+        </div>
+        <div class="stat-item orange">
+          <h3>Sales</h3>
+          <p>50,000</p>
+          <a href="#">More Info →</a>
+

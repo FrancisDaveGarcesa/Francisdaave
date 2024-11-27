@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:yellowgreen;
+            margin: 0;
+            padding:0;
+        }
+ 
+
+        /*Header Styling*/
+
+        header{
+            color: red;
+
+        }
+
+        h1{
+            font-size: 30px;
+            margin-left: 200px;
+            margin-top: 100px;
+        }
+
+        .logo{
+            width: 120px;
+            height: 100px;
+            border-radius: 50%;
+            border: solid red;
+            position: absolute;
+            bottom: 780px;
+            left: 70px;
+        }
+        .login{
+            margin-top: -80px;
+
+        }
+
+        .login-button{
+            height: 23px;
+            margin-left: 82%;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            color: Black;
+            background-color:Green;
+            border-radius: 5px;
+
+        }
+
+        .login-button:hover {
+            background-color: yellow;
+        }
+
+        a{
+            text-decoration: none;
+            font-family: sans-serif;
+            color: black;
+            font-weight: bold;
+            font-size: 50px;
+        }
+
+        li{
+            list-style-type: none;
+            margin-top: 40px;
+        }
+
+        
+
+        input[type=text] {
+            height: 35px;
+            font-weight: bold;
+            float: right;
+            padding: 6px;
+            border: none;
+            margin-top: 8px;
+            margin-right: 16px;
+            font-size: 15px;
+            background-image: url(Searchicon.png);
+            background-repeat: no-repeat;
+            background-size: 45px;
+            margin-top: -8px;
+            border-radius: 8px;
+
+
+        }
+        .body{
+            background-color: lightblue;
+            margin-top: 80px;
+            height:160px;
+        }
+        .menu{
+            display: inline-flex;
+            gap: 30px;
+            margin-bottom: 50px;
+            padding: 20px
+        }
+
+
+
+/*Image slider Style*/
+        #Border1{
+            width:1800px;
+            border-radius: 10px;
+        }
+
+        #Border2{
+           width:1800px;
+           border-radius: 10px;    
+        }
+
+        #Border3{
+           width:1800px;
+           border-radius: 10px; 
+        }
+
+
+
+        .slideshow-container {
+            max-width: px;
+            position: relative;
+            margin: auto;
+        }
+
+        .Sliderborder{
+            margin-top: 60px;
+        }
+
+/* Next & previous buttons */
+        .next {
+            cursor: pointer;
+            position: relative;
+            left: 900px;
+            bottom: 270px;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .prev {
+            cursor: pointer;
+            right: 900px;
+            bottom: 270px;
+            position: relative;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+/* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+/* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+/* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+/*style for Map and youtube*/
+
+        .map-yt{
+            display: inline-flex;
+            gap: 80px;
+        }
+
+/*Gallery Image Styling*/
+
+        .gal{
+            border: solid white;
+
+        }
+        .gallery-images{
+            border: solid white;
+        }
+
+        #Logo1{
+
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+
+        }
+        #Logo2{
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        #Logo3{
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        #Logo4{
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        #Logo5{
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        #Logo6{
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        #Logo7{
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        #Logo8{
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        #Logo9{
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        #Logo10{
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        #Logo11{
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        #Logo12{
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        #Logo13{
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        #Logo14{
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+/*Image Hover Styling*/
+    
+        #Logo1:hover{
+
+            background-color: red;
+
+        }
+        #Logo2:hover{
+            background-color: orange;
+        }
+        #Logo3:hover{
+            background-color: yellow;
+        }
+        #Logo4:hover{
+            background-color: green;
+        }
+        #Logo5:hover{
+            background-color: blue;
+        }
+        #Logo6:hover{
+            background-color: violet;
+        }
+        #Logo7:hover{
+            background-color: red;
+        }
+        #Logo8:hover{
+            background-color: orange;
+        }
+        #Logo9:hover{
+            background-color: yellow;
+        }
+        #Logo10:hover{
+            background-color: green;
+        }
+        #Logo11:hover{
+            background-color: blue;
+        }
+        #Logo12:hover{
+            background-color: violet;
+        }
+        #Logo13:hover{
+            background-color: red;
+        }
+        #Logo14:hover{
+            background-color: orange;
+        }
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="website-name">Pet Grooming Management System</h1>
+        <div class="head">
+        <div class="header-content">
+            <a href="Index.html"><img src="Profile.png" alt="Logo Profile" class="logo"></a>
+            <div class="login">
+                <!-- Added the 'login-button' class to the Login link -->
+                <a href="login.html" class="login-button" >Login</a>
+                <input type="text" placeholder="Search" style="position: relative; top: 6px;">
+            </div>
+        </div>
+        </div>
+        </header>
+        <div class="body">
+        <div class="menu" style="border: solid red; width: 1857px; height: 114px;">
+            
+            <li>
+            <a href="Index.html;">Home</a>
+            </li>
+
+            <li>
+            <a href="Services.html">Services</a>
+            </li>
+
+            <li>
+            <a href="Contact.html">Contact</a>
+            </li>
+        </div>  
+        </div> 
+<!-- Image Slider -->
+<center>
+<div class="Sliderborder">
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="Slider1.png" id="Border1" style="height: 500px; border: solid white;">
+</div>
+
+<div class="mySlides fade">
+  <img src="Slider2.png" id="Border2" style="height: 500px; border: solid white;">
+</div>
+
+<div class="mySlides fade">
+  <img src="Slider3.png" id="Border3" style="height: 500px; border: solid white;">
+</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</center>
+
+    <!-- Image Gallery -->
+    <section class="image-gallery">
+<center>
+        <h2>Image Gallery</h2>
+</center>
+        <div class="gal">
+        <div class="gallery-images">
+            <img src="Img1.png" id="Logo1" style=" height: 225px;" width="225px">
+            <img src="Img2.png" id="Logo2" style=" height: 225px;" width="225px">
+            <img src="Img3.png" id="Logo3" style=" height: 225px;" width="225px">
+            <img src="Img4.png" id="Logo4" style=" height: 225px;" width="225px">
+            <img src="Img5.png" id="Logo5" style=" height: 225px;" width="225px">
+            <img src="Img6.png" id="Logo6" style=" height: 225px;" width="225px">
+            <img src="Img7.png" id="Logo7" style=" height: 225px;" width="225px">
+            <img src="Img8.png" id="Logo8" style=" height: 225px;" width="225px">
+            <img src="Img9.png" id="Logo9" style=" height: 225px;" width="225px">
+            <img src="Img10.png"id="Logo10" style="height: 225px;" width="225px">
+            <img src="Img11.png"id="Logo11" style="height: 225px;" width="225px">
+            <img src="Img12.png"id="Logo12" style="height: 225px;" width="225px">
+            <img src="Img13.png"id="Logo13" style="height: 225px;" width="225px">
+            <img src="Img14.png"id="Logo14" style="height: 225px;" width="225px">
+        </div>
+        </div>
+</center>
+    <!-- Embedded Google Map and Video Sections -->
+<center>
+    <div class="map-yt">
+        <!-- Map Section -->
+        <section class="map-section">
+            <h2>Find Us Here</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246.6366097355473!2d124.66425370865099!3d8.481311659540557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32fff2b8bb5fb355%3A0x6a87b62760602021!2sNEAP%20REGION%2010!5e0!3m2!1sen!2sph!4v1731919248842!5m2!1sen!2sph" width="800" height="450" style="border: solid red;"></iframe>
+        </section>
+
+        <!-- Connect Section -->
+        <section class="connect">
+            <h2>Grooming Videos</h2>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/YpzjiS5M8V0" style="border: solid red;"></iframe>
+        </section>
+    </div>
+</center>
+<script>
+    let slideIndex = 1;
+        showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+
+
+</body>
+</html>
+
